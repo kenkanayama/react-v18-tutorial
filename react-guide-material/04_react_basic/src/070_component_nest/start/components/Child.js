@@ -1,16 +1,13 @@
 import "./Child.css";
-import React from "react";
-
+import { List } from "./List" //.jsが省略されてもウェブパックが判断してくれている
 
 const Child = () => {
   return (
-      <>
     <div className="component">
       <h3>Hello Component</h3>
+      <List />
     </div>
-    <h3>Hello Flagment</h3>
-    <p>Lorem</p>
-    </>  );
+  );
 };
 
 export default Child;
