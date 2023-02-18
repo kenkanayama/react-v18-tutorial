@@ -18,3 +18,6 @@ import React from "react"; であれば　<React.Fragment> で括る。　import
 しかしFragment は　<></>でも使用でき、その場合はimport を書く必要もない。あと属性（classNmaeとか）はk本的にはつけられない。一つだけつけられる。keyという属性。keyがつく場合はFlagmentという文字列は省略できない。
 
 JSXでは波括弧でJSを埋め込むことができる。式を埋め込める。文は無理。
+
+式：何らかの値を返すもの（変数に代入できるもの）
+文：変数宣言、for文、if文、switch文やセミコロンで区切るもの。
