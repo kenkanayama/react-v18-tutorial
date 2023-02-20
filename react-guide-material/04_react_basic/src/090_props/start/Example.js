@@ -5,6 +5,7 @@ const Example = () => {
         <>
         <Child color=""/>
         <Child color="red"/>
+        <Child />
         </>
     )
 };

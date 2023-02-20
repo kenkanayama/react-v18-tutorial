@@ -9,3 +9,9 @@
   color: red;
   border: 5px solid red;
 }
+
+.App-start .component.green {
+  padding: 1rem;
+  color: green;
+  border: 5px solid green;
+}

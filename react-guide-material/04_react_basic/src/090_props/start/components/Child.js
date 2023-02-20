@@ -5,8 +5,8 @@
 
 import "./Child.css";
 
-const Child = (props) => {
-  const color = props.color;
+const Child = ({color = 'green'}) => {
+
   return (
     <div className={`component ${color}`}>
       <h3>Hello Component</h3>
