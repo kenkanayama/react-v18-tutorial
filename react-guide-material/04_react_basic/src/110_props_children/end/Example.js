@@ -11,7 +11,7 @@ const profile = [
  */
 const Example = () => {
   return (
-    <div>
+    <>
       <Container title="順番通り渡す">
         <Profile key={profile[0].name} {...profile[0]} />
         <Profile key={profile[1].name} {...profile[1]} />
@@ -19,10 +19,10 @@ const Example = () => {
 
       <Container
         title="個別渡す"
-        first={<Profile key={profile[0].name} {...profile[1]} />}
-        second={<Profile key={profile[1].name} {...profile[0]} />}
+        first={<Profile {...profile[1]} />}
+        second={<Profile {...profile[0]} />}
       />
-    </div>
+    </>
   );
 };
 
