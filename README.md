@@ -40,3 +40,5 @@ const desc = Reflect.getOwnPropertyDescriptor(props, 'name');第２引数では�
 
 JSXはJavaScriptがどのような過程でHTMLになるかというと、babelで変換されている。関数に置き換えられている。React.createElement()という関数を使われている。
 JSXはJSのオブジェクトに変換される。なのでJSで行える操作はJSXにも適用できる。React要素と呼ばれる。変換は、JSX→BABELによって関数が実行されて、React要素になる。タグに挟まれているものがchildrenとなる。
+
+コンポーネントはReact要素？React要素はReact.createElement()によって生成されるもの。なので、答えはYes。
