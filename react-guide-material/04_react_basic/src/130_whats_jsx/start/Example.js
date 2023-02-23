@@ -3,6 +3,8 @@ import React from "react";
 const Example = () => {
   const sample1 = <h1 className="greeting">Hello World</h1>;
 
+  console.log(sample1);
+
   // React.createElement("h1", {
   //   className: "greeting"
   // }, "Hello World");
@@ -13,6 +15,7 @@ const Example = () => {
       <h2>Good to see you.</h2>
     </div>
   );
+  console.log(sample2);
 
   console.log(
     (

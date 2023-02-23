@@ -15,7 +15,7 @@ const Example = () => {
       </Container>
 
       <Container
-        title="個別渡す"
+        title="個別渡す" children={"children"}
         first={<Profile key={profile[0].name} {...profile[1]} />}
         second={<Profile key={profile[1].name} {...profile[0]} />}
       />

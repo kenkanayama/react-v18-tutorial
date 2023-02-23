@@ -1,7 +1,7 @@
 import "./Container.css";
 
 const Container = ({ title, children, first, second, color }) => {
-
+console.log(children);
   return (
     <div className={`container ${color}`}>
       <h3>{title}</h3>
