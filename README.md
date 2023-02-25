@@ -51,3 +51,17 @@ React要素のツリーと、コンポーネントツリーという言葉と構
 ReactDOM.createRootで、rootを作って、root.render(何かしらのDOM要素)でDOMにする。
 Reactはコンポーネントごとに管理する。関数コンポーネントを使うといい。propsを受け取ってJSXを返す。コンポー年おてゃ先頭小文字だと動かないので注意。コンポーネントにはpropsを渡せる。基本的に一方通行。親から子要素へ渡す。
 コンポーネントにするメリットは、再利用性の向上、可読性の向上、疎結合によるバグの減少。
+
+04_react_basic で勉強中（2023-02-15）
+04_react_basic にて npm install, npm start
+
+input 要素　とよくつかわれる
+onChange 入力値の変更を検知して発火（onInputだた、ReactではonInputはonChangeで使う。JavascriptのonchangeとReactのonChangeは挙動が異なる。注意。）
+onBlur　入力欄からのフォーカスが消えたことを検知
+onFocus　入力欄がフォーカスされたときに検知
+
+onMouseEnter マウスがその領域に入ってきたら発火
+onMouseLeave マウスがその領域から外れたら発火
+
+useStateは[ 値、更新用の関数 ]を返す
+useState 画面を再生成する。０番目に値、1番目に更新用の関数 なので分割代入で取得することが多い。
