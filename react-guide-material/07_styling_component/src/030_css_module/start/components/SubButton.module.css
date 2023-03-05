@@ -9,6 +9,13 @@
     cursor: pointer;
     background: orange;
 }
+.btn:hover {
+    background-color: red;
+}
+
+.btn:active {
+    background-color: purple;
+}
 
 .selected {
     background-color: pink;

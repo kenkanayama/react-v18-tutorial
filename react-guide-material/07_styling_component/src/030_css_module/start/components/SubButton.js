@@ -1,6 +1,6 @@
-import "./SubButton.css";
+import stypes from "./SubButton.module.css";
 
-const SubButton = () => {
-    return <button className="btn">サブボタン</button>
+const SubButton = ({clickHandler}) => {
+    return <button className={stypes.btn} onClick={clickHandler}>サブボタン</button>
 }
 export default SubButton;
