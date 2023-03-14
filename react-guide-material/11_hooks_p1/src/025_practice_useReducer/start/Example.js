@@ -39,7 +39,7 @@ const Example = () => {
     dispatch({type: e.target.value});
   };
   const numChangeHandler = (e) => {
-    dispatch({type: 'change', payload: {name: e.target.name, value: e.target.value}});
+    dispatch({type: 'change', payload: {name: e.target.name, value: parseInt(e.target.value)}});
   };
   return (
     <>
@@ -61,8 +61,7 @@ const Example = () => {
           onChange={numChangeHandler}
         />
       </div>
-      {/* 以下の　state.type　がわからない。どこからtypeを持って生きているのか */}
-      <select value={state.type} name="type" onChange={calculate}>
+      <select name="type" onChange={calculate}>
         {CALC_OPTIONS.map((type) => (
           <option key={type} value={type}>
             {type}
