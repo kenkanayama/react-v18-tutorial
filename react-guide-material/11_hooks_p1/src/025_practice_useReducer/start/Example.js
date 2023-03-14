@@ -61,6 +61,7 @@ const Example = () => {
           onChange={numChangeHandler}
         />
       </div>
+      {/* 以下の　state.type　がわからない。どこからtypeを持って生きているのか */}
       <select value={state.type} name="type" onChange={calculate}>
         {CALC_OPTIONS.map((type) => (
           <option key={type} value={type}>
